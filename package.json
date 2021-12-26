@@ -6,6 +6,9 @@
   "scripts": {
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": "15.x"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,4 +25,5 @@
     "nodemon": "^2.0.13",
     "uuidv4": "^6.2.12"
   }
+  
 }
