@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 const dotenv=require('dotenv/config')
 const cors=require('cors')
-
+const port=process.env.PORT||3000
 // const bodyparser=require('body-parser')
 const app=express();
 const authroute=require('./routes/auth')
@@ -60,5 +60,5 @@ app.get('/',(req,res)=>{
     res.send('login/signup code')
 })
 
-app.listen(3000,()=>console.log('Server Running'))
+app.listen(port,()=>console.log('Server Running'))
 
