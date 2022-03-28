@@ -52,6 +52,30 @@ const PostSchema = new mongoose.Schema(
         },
        
      ],
+     Activities:[
+      {
+          Name:String,
+          Desc:String
+      },
+      ],
+   Certificates:[
+      {
+          Name:String,
+          Year:String
+      },
+      ],
+      Rewards:[
+        {
+            Name:String,
+            Year:String
+        },
+        ],
+        Skills:[
+          {
+              Name:String,
+              Level:String
+          },
+          ],
      Services:[
         
         {
@@ -67,6 +91,10 @@ const PostSchema = new mongoose.Schema(
     Color: {
       type: String,
       default: '#8a2be2',
+    },
+    Font: {
+      type: String,
+      default: 'sans-serif',
     },
     
   },
