@@ -18,6 +18,22 @@ const PostSchema = new mongoose.Schema(
     type:String,
     required:true
     },
+    LinkId:{
+      type:String,
+      required:true
+      },
+    Role:{
+      type:String,
+      required:true
+      },
+    NoProjects:{
+      type:String,
+      required:true
+      },
+    YrExp:{
+      type:String,
+      required:true
+      },
     Address:{
       type: String,
       required:true,
@@ -32,6 +48,7 @@ const PostSchema = new mongoose.Schema(
         required:true,
         max: 500,
     },
+
     Education:[
         
        {
@@ -52,12 +69,7 @@ const PostSchema = new mongoose.Schema(
         },
        
      ],
-     Activities:[
-      {
-          Name:String,
-          Desc:String
-      },
-      ],
+     
    Certificates:[
       {
           Name:String,
@@ -84,6 +96,12 @@ const PostSchema = new mongoose.Schema(
         },
        
      ],
+     PersonalQ:[  
+      {
+          type:String,
+      },
+     
+   ],
      Images: {
       type: Array,
       default: [],
